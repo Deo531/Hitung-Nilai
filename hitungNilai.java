@@ -7,7 +7,7 @@ public class hitungNilai {
         int nilai = input.nextInt();
         String kriteria;
 
-        if (nilai >= 96 && nilai >= 100){
+        if (nilai >= 96 && nilai <= 100){
             kriteria = "A";
         } else if (nilai >= 91 && nilai <= 95) {
             kriteria = "A-";
@@ -37,18 +37,28 @@ public class hitungNilai {
                     System.out.println("Predikat nilai A: Sangat baik"); 
                     break; 
                 case "B+" :
+                    System.out.println("Predikat nilai B+: Baik"); 
+                    break; 
                 case "B" :
-                case "B-" :
                     System.out.println("Predikat nilai B: Baik"); 
                     break; 
+                case "B-" :
+                    System.out.println("Predikat nilai B-: Baik"); 
+                    break; 
                 case "C+" : 
+                    System.out.println("Predikat nilai C+: Cukup"); 
+                    break; 
                 case "C" : 
-                case "C-" : 
                     System.out.println("Predikat nilai C: Cukup"); 
                     break; 
+                case "C-" : 
+                    System.out.println("Predikat nilai C-: Cukup"); 
+                    break; 
                 case "D+" : 
+                    System.out.println("Predikat nilai D+: Kurang"); 
+                    break;
                 case "D-" :  
-                    System.out.println("Predikat nilai D: Kurang"); 
+                    System.out.println("Predikat nilai D-: Kurang"); 
                     break;
                 default:
                     System.out.println("Predikat nilai tidak valid");
